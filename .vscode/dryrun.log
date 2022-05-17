@@ -1,0 +1,4 @@
+make: Entering directory `/Users/mcintosh/go/src/cod3rcarl/wwd-grpc'
+go mod tidy
+make: Leaving directory `/Users/mcintosh/go/src/cod3rcarl/wwd-grpc'
+ 

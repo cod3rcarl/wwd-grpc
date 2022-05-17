@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  wwdatabase-db:
+    container_name: wwdatabase-db
+    image: postgres:latest
+    env_file:
+      - ./.env
+    volumes:
+      - database-data:/var/lib/postgresql/data/
+    ports:
+      - "5445:5432"
+
+  wwdatabase:
+    image: cod3rcarl/wwdatabase
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+      - "8181:8181"
+      - "3131:3131"
+volumes:
+  database-data:
