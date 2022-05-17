@@ -12,7 +12,7 @@ FROM base AS go-builder
 RUN CGO_ENABLED=0 go build \
   -ldflags "-w -s" \
   -installsuffix 'static' \
-  -o /wwdatabase main.go
+  -o /wwdatabase cmd/app/main.go
 
 FROM scratch AS final-image
 
