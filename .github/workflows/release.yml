@@ -30,6 +30,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Private Repo Config
+        run: |
+          git config \
+            --global \
+            url."https://cod3rcarl:${{ secrets.GH_TOKEN }}@github.com".insteadOf \
+            "https://github.com"
+          go env -w GOPRIVATE=github.com/cod3rcarl
+
       - name: Fetch required Go modules
         run:  go mod download
 
