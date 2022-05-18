@@ -16,6 +16,6 @@ RUN CGO_ENABLED=0 go build \
 
 FROM scratch AS final-image
 
-COPY --from=go-builder /wwdatabase /wwdatabase
+COPY --from=go-builder /wwd-grpc /wwd-grpc
 
-ENTRYPOINT [ "/wwdatabase" ]
+ENTRYPOINT [ "/wwd-grpc" ]
