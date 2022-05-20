@@ -40,10 +40,10 @@ run:
   # "/" will be replaced by current OS file path separator to properly work
   # on Windows.
   skip-files:
-    - "internal/server/graph/resolvers/entity.resolvers.go"
-    - "internal/server/graph/resolvers/mutation.resolvers.go"
-    - "internal/server/graph/resolvers/query.resolvers.go"
-    - "internal/server/graph/resolvers/root.resolvers.go"
+    - "pkg/server/graph/resolvers/entity.resolvers.go"
+    - "pkg/server/graph/resolvers/mutation.resolvers.go"
+    - "pkg/server/graph/resolvers/query.resolvers.go"
+    - "pkg/server/graph/resolvers/root.resolvers.go"
     # - ".*\\.my\\.go$"
     # - lib/bad.go
 
@@ -658,7 +658,7 @@ linters-settings:
 
   testpackage:
     # regexp pattern to skip files
-    skip-regexp: (export|internal)_test\.go
+    skip-regexp: (export|pkg)_test\.go
 
   thelper:
     # The following configurations enable all checks. It can be omitted because all checks are enabled by default.
@@ -815,7 +815,7 @@ issues:
 
     # Exclude known linters from partially hard-vendored code,
     # which is impossible to exclude via "nolint" comments.
-    # - path: internal/hmac/
+    # - path: pkg/hmac/
     #   text: "weak cryptographic primitive"
     #   linters:
     #     - gosec

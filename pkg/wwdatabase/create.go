@@ -5,7 +5,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/cod3rcarl/wwd-grpc/internal/models"
+	"github.com/cod3rcarl/wwd-grpc/pkg/models"
 	pb "github.com/cod3rcarl/wwd-protorepo-wwdatabase/v1"
 
 	"google.golang.org/protobuf/types/known/timestamppb"

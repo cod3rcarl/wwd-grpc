@@ -10,9 +10,9 @@ import (
 	baseLogger "github.com/cod3rcarl/wwd-grpc/base/logger"
 	basePgx "github.com/cod3rcarl/wwd-grpc/base/pgx"
 
-	"github.com/cod3rcarl/wwd-grpc/internal/server"
-	"github.com/cod3rcarl/wwd-grpc/internal/storage"
-	wwd "github.com/cod3rcarl/wwd-grpc/internal/wwdatabase"
+	"github.com/cod3rcarl/wwd-grpc/pkg/server"
+	"github.com/cod3rcarl/wwd-grpc/pkg/storage"
+	wwd "github.com/cod3rcarl/wwd-grpc/pkg/wwdatabase"
 )
 
 func main() {

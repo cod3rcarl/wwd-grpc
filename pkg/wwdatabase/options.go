@@ -1,7 +1,7 @@
 package client
 
 import (
-	"github.com/cod3rcarl/wwd-grpc/internal/storage"
+	"github.com/cod3rcarl/wwd-grpc/pkg/storage"
 
 	"go.uber.org/zap"
 )

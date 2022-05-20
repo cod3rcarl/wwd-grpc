@@ -1,7 +1,7 @@
 package server
 
 import (
-	ww "github.com/cod3rcarl/wwd-grpc/internal/wwdatabase"
+	ww "github.com/cod3rcarl/wwd-grpc/pkg/wwdatabase"
 )
 
 type Option interface {

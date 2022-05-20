@@ -4,23 +4,23 @@ schema:
 
 # Where should the generated server code go?
 exec:
-  filename: graphql/internal/server/graph/generated/generated.go
+  filename: graphql/pkg/server/graph/generated/generated.go
   package: generated
 
 # Uncomment to enable federation
 # federation:
-#   filename: internal/server/graph/generated/federation.go
+#   filename: pkg/server/graph/generated/federation.go
 #   package: gqlgenerated
 
 # Where should any generated models go?
 model:
-  filename: graphql/internal/server/graph/model/models_gen.go
+  filename: graphql/pkg/server/graph/model/models_gen.go
   package: model
 
 # Where should the resolver implementations go?
 resolver:
   layout: follow-schema
-  dir: graphql/internal/server/graph/resolvers/
+  dir: graphql/pkg/server/graph/resolvers/
   package: resolvers
 
 # Optional: turn on use `gqlgen:"fieldName"` tags in your models
@@ -35,7 +35,7 @@ resolver:
 # gqlgen will search for any type names in the schema in these go packages
 # if they match it will use them, otherwise it will generate them.
 # autobind:
-#   - "github.com/cod3rcarl/wwd-grpc/graphql/internal/server/graph/model"
+#   - "github.com/cod3rcarl/wwd-grpc/graphql/pkg/server/graph/model"
 
 # This section declares type mapping between the GraphQL and go type systems
 #

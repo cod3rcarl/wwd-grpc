@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/cod3rcarl/wwd-grpc/internal/models"
+	"github.com/cod3rcarl/wwd-grpc/pkg/models"
 	"github.com/georgysavva/scany/pgxscan"
 	"github.com/pkg/errors"
 )

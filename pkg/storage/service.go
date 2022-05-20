@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/cod3rcarl/wwd-grpc/base/pgx"
-	"github.com/cod3rcarl/wwd-grpc/internal/models"
+	"github.com/cod3rcarl/wwd-grpc/pkg/models"
 	"go.uber.org/zap"
 )
 

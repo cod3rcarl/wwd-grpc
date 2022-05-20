@@ -5,7 +5,7 @@ import (
 )
 
 var (
-	ErrInternal            = errors.New("service internal error")
+	Errpkg                 = errors.New("service pkg error")
 	ErrUnavailable         = errors.New("service unavailable")
 	ErrUnknown             = errors.New("service error")
 	ErrNoNameOrID          = errors.New("must provide name or ID")
