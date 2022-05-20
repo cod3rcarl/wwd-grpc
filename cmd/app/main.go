@@ -29,7 +29,7 @@ func main() {
 		wwd.WithStorage(store),
 	)
 
-	grpcSrv := createGrpcServer(logger, wwdService)
+	grpcSrv := CreateGrpcServer(logger, wwdService)
 
 	go func() {
 		if err := grpcSrv.ListenAndServe(); err != nil {
@@ -83,7 +83,7 @@ func createStorage(logger *zap.Logger) *storage.Service {
 	return storage.NewStorage(storage.WithBase(base))
 }
 
-func createGrpcServer(
+func CreateGrpcServer(
 	logger *zap.Logger,
 	wwdService wwd.ServiceInterface,
 ) *server.Service {
