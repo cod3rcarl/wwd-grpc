@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net"
 
+	client "github.com/cod3rcarl/wwd-grpc/internal/wwdatabase"
 	pb "github.com/cod3rcarl/wwd-protorepo-wwdatabase/v1"
-	client "github.com/cod3rcarl/wwdatabase-go-backend/internal/wwdatabase"
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"

@@ -1,4 +1,4 @@
-module github.com/cod3rcarl/wwdatabase-go-backend
+module github.com/cod3rcarl/wwd-grpc
 
 // +heroku goVersion go1.17
 go 1.17

@@ -13,7 +13,7 @@ func (s *Service) GetChampions(ctx context.Context, req *pb.GetChampionsRequest)
 	s.logger.Info("gRPC call: GetAllChampions")
 	pbMc, err := s.wwdatabase.GetAllChampions(ctx, req)
 	if err != nil {
-		return nil, errors.Errorf("error in grpc call", err)
+		return nil, errors.Errorf("error in grpc call %v", err)
 	}
 
 	return pbMc, nil
@@ -122,7 +122,7 @@ func (s *Service) DeleteChampion(ctx context.Context, req *pb.DeleteChampionRequ
 	s.logger.Info("gRPC call: DeleteChampion")
 	i, err := s.wwdatabase.DeleteChampion(ctx, req.Id)
 	if err != nil {
-		return nil, errors.Errorf("error in grpc call", err)
+		return nil, errors.Errorf("error in grpc call: %v", err)
 	}
 
 	return i, nil

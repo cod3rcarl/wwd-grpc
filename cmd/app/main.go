@@ -6,13 +6,13 @@ import (
 
 	"go.uber.org/zap"
 
-	baseApp "github.com/cod3rcarl/wwdatabase-go-backend/base/app"
-	baseLogger "github.com/cod3rcarl/wwdatabase-go-backend/base/logger"
-	basePgx "github.com/cod3rcarl/wwdatabase-go-backend/base/pgx"
+	baseApp "github.com/cod3rcarl/wwd-grpc/base/app"
+	baseLogger "github.com/cod3rcarl/wwd-grpc/base/logger"
+	basePgx "github.com/cod3rcarl/wwd-grpc/base/pgx"
 
-	"github.com/cod3rcarl/wwdatabase-go-backend/internal/server"
-	"github.com/cod3rcarl/wwdatabase-go-backend/internal/storage"
-	wwd "github.com/cod3rcarl/wwdatabase-go-backend/internal/wwdatabase"
+	"github.com/cod3rcarl/wwd-grpc/internal/server"
+	"github.com/cod3rcarl/wwd-grpc/internal/storage"
+	wwd "github.com/cod3rcarl/wwd-grpc/internal/wwdatabase"
 )
 
 func main() {

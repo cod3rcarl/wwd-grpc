@@ -1,7 +1,7 @@
 package storage
 
 import (
-	"github.com/cod3rcarl/wwdatabase-go-backend/base/pgx"
+	"github.com/cod3rcarl/wwd-grpc/base/pgx"
 	"go.uber.org/zap"
 )
 

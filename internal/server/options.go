@@ -1,7 +1,7 @@
 package server
 
 import (
-	ww "github.com/cod3rcarl/wwdatabase-go-backend/internal/wwdatabase"
+	ww "github.com/cod3rcarl/wwd-grpc/internal/wwdatabase"
 )
 
 type Option interface {

@@ -3,8 +3,8 @@ package client
 import (
 	"context"
 
+	"github.com/cod3rcarl/wwd-grpc/internal/models"
 	pb "github.com/cod3rcarl/wwd-protorepo-wwdatabase/v1"
-	"github.com/cod3rcarl/wwdatabase-go-backend/internal/models"
 	"github.com/pkg/errors"
 )
 

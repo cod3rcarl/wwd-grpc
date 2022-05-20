@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cod3rcarl/wwdatabase-go-backend/internal/models"
+	"github.com/cod3rcarl/wwd-grpc/internal/models"
 	"github.com/georgysavva/scany/pgxscan"
 	"github.com/google/uuid"
 	"github.com/pkg/errors"

@@ -3,8 +3,8 @@ package client
 import (
 	"context"
 
+	"github.com/cod3rcarl/wwd-grpc/internal/storage"
 	pb "github.com/cod3rcarl/wwd-protorepo-wwdatabase/v1"
-	"github.com/cod3rcarl/wwdatabase-go-backend/internal/storage"
 
 	"go.uber.org/zap"
 )

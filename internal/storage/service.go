@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/cod3rcarl/wwdatabase-go-backend/base/pgx"
-	"github.com/cod3rcarl/wwdatabase-go-backend/internal/models"
+	"github.com/cod3rcarl/wwd-grpc/base/pgx"
+	"github.com/cod3rcarl/wwd-grpc/internal/models"
 	"go.uber.org/zap"
 )
 
