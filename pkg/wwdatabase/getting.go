@@ -2,6 +2,7 @@ package client
 
 import (
 	"context"
+	"fmt"
 
 	"github.com/cod3rcarl/wwd-grpc/pkg/models"
 	pb "github.com/cod3rcarl/wwd-protorepo-wwdatabase/v1"
@@ -42,6 +43,8 @@ func (s *Service) GetChampionByOrderNumber(ctx context.Context, tn *pb.ChampionN
 }
 
 func (s *Service) GetChampionByDate(ctx context.Context, d *pb.GetChampionByDateRequest) (*pb.ChampionResponse, error) {
+	s.logger.Info("Hits Here - Champion By Date")
+	fmt.Println("Hits Here - Champion By Date")
 	champion, err := s.store.GetChampionByDate(ctx, models.TimestampToTime(d.Date))
 	if err != nil {
 		if errors.Is(err, ErrNoChampionsReturned) {
@@ -57,7 +60,11 @@ func (s *Service) GetChampionByDate(ctx context.Context, d *pb.GetChampionByDate
 	}, nil
 }
 
-func (s *Service) GetCurrentChampion(ctx context.Context, cc *pb.GetCurrentChampionRequest) (*pb.ChampionResponse, error) {
+func (s *Service) GetCurrentChampion(ctx context.Context, cc *pb.GetCurrentChampionRequest) (
+	*pb.ChampionResponse, error,
+) {
+	s.logger.Info("Hits Here - Current Champion")
+	fmt.Println("Hits Here - Current Champion")
 	champion, err := s.store.GetCurrentChampion(ctx, cc.CurrentChampion)
 	if err != nil {
 		if errors.Is(err, ErrNoChampionsReturned) {
